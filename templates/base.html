@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Buddy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">Therapist Buddy</a>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Info">Informations</a></li>
+        <li><a href="/upload">Upload</a></li>
+    </ul>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <p>&copy; 2024 Eng. Sarah Mahmoud</p>
+    <p>Senior 2024</p>
+</footer>
+
+
+<script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
