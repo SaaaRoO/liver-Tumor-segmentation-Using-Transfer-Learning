@@ -115,6 +115,7 @@ header.sticky ul li a {
 .contentBx h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-style: italic;
 }
 .w50 {
   min-width: 50%;
@@ -131,21 +132,42 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
 }
-.Info .content .InfoBx {
-  padding: 40px 20px;
-  background: #222;
-  color: #fff;
-  max-width: 340px;
-  margin: 20px;
-  text-align: center;
-  transition: 0.5s;
+
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
 }
-.Info .content .InfosBx:hover {
-  background: #2196f3;
+
+.scroll-container {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.Info.content .InfoBx h2 {
-  font-size: 20px;
-  font-weight: 600;
+
+.InfoBx {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Additional styles for footer */
@@ -159,5 +181,6 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
 
 
