@@ -1,5 +1,5 @@
-Key Components:
-•	Machine Learning Model: The core of the project was the machine learning model,which integrated transfer learning with ResNet50 and the U-Net architecture.
+
+•	Deep Learning Model: The core of the project was the deep learning model,which integrated transfer learning with ResNet50 and the U-Net architecture.
 This combination enabled the model to achieve impressive accuracy levels, reaching 99.01% in training and 98.9% in testing phase.
 
 •	Flask Web Application: The project utilized Flask, a lightweight web framework for Python, to deploy the machine learning model as a web application.
